@@ -199,7 +199,7 @@ section{
     text-align: center;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 768px) {
     #second-section {
         padding-left: 2em;
         padding-right: 2em;
@@ -278,7 +278,7 @@ section{
     margin-top: 4rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .description-box {
         width: 90%;
         margin-bottom: 1rem;
