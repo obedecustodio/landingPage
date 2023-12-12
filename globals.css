@@ -19,4 +19,8 @@ body{
     min-height: 100svh;
     width: 100%;
     background-color: #ffffff;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
