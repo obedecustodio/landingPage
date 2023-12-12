@@ -1,0 +1,22 @@
+@font-face {
+    font-family: poppins;
+    src: url(./public/fonts/Poppins/Poppins-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "bold poppins";
+    src: url(./public/fonts/Poppins/Poppins-Bold.ttf) format(truetype);
+}
+
+*{
+    font-family: poppins;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100svh;
+    width: 100%;
+    background-color: #ffffff;
+}
