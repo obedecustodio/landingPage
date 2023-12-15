@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./bootstrap.min.css">
     <script src="./bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,13 +25,15 @@
                     <li>SERVICOS</li>
                     <li>NOTICIAS</li>
                     <li>CONTACT</li>
+                    <li><button class="btn btn-secondary" onclick="switchLanguage()">Mudar Idioma</button></li>
                 </ul>
             </div>
         </nav>
         <!-- HERO SECTION -->
         <section id="hero">
             <div>
-                <h1>
+                <h1 class="translate"  data-en="Connecting Distances, <br> Building Trust" data-pt="Unindo Distâncias, <br>
+                    Carregando Confiança">
                     Unindo Distâncias, <br>
                     Carregando Confiança
                 </h1>
@@ -44,7 +47,14 @@
             <div class="row">
                     <div class="col-lg-6 col-sm-6" id="first-section-first-div">
                         <h2 class="section-heading-red">Dynamic Port Lda</h2>
-                        <p>
+                        <p class="translate" 
+                        data-en="We are a logistics company committed to providing high-quality services. As logistics solution providers, our dedication to meeting your needs is what drives us. With years of experience, our team is ready to deliver efficiency and reliability in every shipment" 
+                        data-pt="Somos uma empresa de logística comprometida em fornecer 
+                        serviços de alta qualidade. Como provedores de soluções 
+                        logísticas, nossa dedicação em atender às suas necessidades 
+                        é o que nos impulsiona. Com anos de experiência, nossa 
+                        equipe está pronta para oferecer eficiência e confiabilidade 
+                        em cada entrega.">
                             Somos uma empresa de logística comprometida em fornecer 
                             serviços de alta qualidade. Como provedores de soluções 
                             logísticas, nossa dedicação em atender às suas necessidades 
@@ -53,7 +63,8 @@
                             em cada entrega.
                         </p>
                         <p>
-                            <strong>Escolha a Dynamic Port Lda para uma parceria sólida em logística</strong>
+                            <strong class="translate" data-en="Choose Dynamic Port Lda for a solid partnership in logistics"
+                            data-pt="Escolha a Dynamic Port Lda para uma parceria sólida em logística">Escolha a Dynamic Port Lda para uma parceria sólida em logística</strong>
                         </p>
                     </div>
                     <div class="col-lg-6 col-sm-6" id="first-section-div">
@@ -69,7 +80,8 @@
                 <div class="centralize">
                     <div class="stat-box">
                         <span class="stat-box stat-title">238</span>
-                        <span class="stat-box stat-description">Pacotes entregues</span>
+                        <span class="stat-box stat-description translate"
+                        data-en="Forn">Pacotes entregues</span>
                     </div>
                     <div class="stat-box">
                         <span class="stat-box stat-title">224</span>
@@ -285,6 +297,6 @@
             <p>Inscreva-se para receber nossas últimas ofertas e novidades através do e-mail</p>
         </div>
     </footer>
-</div>
+</div
 </body>
 </html>
