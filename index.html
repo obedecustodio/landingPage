@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dynamic Port</title>
+    <link rel="stylesheet" href="./constants.css">
     <link rel="stylesheet" href="./globals.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <script src="./bootstrap.min.js"></script>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./media-queries.css">
 </head>
 <body>
     <header>
@@ -19,21 +18,37 @@
             </div>
             <!-- NAVIGATION -->
             <div class="navigation">
+                <input type="checkbox" id="menu-toggler">
+                <label class="menu-toggler-label" for="menu-toggler">
+                    <img src="./public/images/menu icon.svg" alt="" class="menu-icon">
+                </label>
+
+                <div id="menu" >
+                    <ul>
+                        <li>HOME</li>
+                        <li>SOBRE</li>
+                        <li>SERVICOS</li>
+                        <li class="translate" data-en="NEWS">NOTICIAS</li>
+                        <li>CONTACT</li>
+                        <li class="translate" onclick="switchLanguage()" class="switchLang" data-en="PT">EN</li>
+                    </ul>
+                </div>
+
                 <ul>
                     <li>HOME</li>
                     <li>SOBRE</li>
                     <li>SERVICOS</li>
-                    <li>NOTICIAS</li>
+                    <li class="translate" data-en="NEWS">NOTICIAS</li>
                     <li>CONTACT</li>
-                    <li><button class="btn btn-secondary" onclick="switchLanguage()">Mudar Idioma</button></li>
+                    <li class="translate" onclick="switchLanguage()" class="switchLang" data-en="PT">EN</li>
                 </ul>
             </div>
         </nav>
         <!-- HERO SECTION -->
         <section id="hero">
             <div>
-                <h1 class="translate"  data-en="Connecting Distances, <br> Building Trust" data-pt="Unindo Distâncias, <br>
-                    Carregando Confiança">
+                <h1 class="translate" data-en="Connecting Distances, 
+                Building Trust" >
                     Unindo Distâncias, <br>
                     Carregando Confiança
                 </h1>
@@ -44,88 +59,85 @@
     <main>
         <!-- first section -->
         <section id="first-section">
-            <div class="row">
-                    <div class="col-lg-6 col-sm-6" id="first-section-first-div">
-                        <h2 class="section-heading-red">Dynamic Port Lda</h2>
-                        <p class="translate" 
-                        data-en="We are a logistics company committed to providing high-quality services. As logistics solution providers, our dedication to meeting your needs is what drives us. With years of experience, our team is ready to deliver efficiency and reliability in every shipment" 
-                        data-pt="Somos uma empresa de logística comprometida em fornecer 
-                        serviços de alta qualidade. Como provedores de soluções 
-                        logísticas, nossa dedicação em atender às suas necessidades 
-                        é o que nos impulsiona. Com anos de experiência, nossa 
-                        equipe está pronta para oferecer eficiência e confiabilidade 
-                        em cada entrega.">
-                            Somos uma empresa de logística comprometida em fornecer 
-                            serviços de alta qualidade. Como provedores de soluções 
-                            logísticas, nossa dedicação em atender às suas necessidades 
-                            é o que nos impulsiona. Com anos de experiência, nossa 
-                            equipe está pronta para oferecer eficiência e confiabilidade 
-                            em cada entrega.
-                        </p>
-                        <p>
-                            <strong class="translate" data-en="Choose Dynamic Port Lda for a solid partnership in logistics"
-                            data-pt="Escolha a Dynamic Port Lda para uma parceria sólida em logística">Escolha a Dynamic Port Lda para uma parceria sólida em logística</strong>
-                        </p>
-                    </div>
-                    <div class="col-lg-6 col-sm-6" id="first-section-div">
-                        <img src="./public/images/dummy-image600x450.jpg" class="dummy-img-1"/>
-                    </div>
+            <div>
+                <h2 class="section-heading-red">Dynamic Port Lda</h2>
+                <p 
+                class="translate"
+                data-en="We are a logistics company committed to providing high-quality services. As logistics solution providers, our dedication to meeting your needs is what drives us. With years of experience, our team is ready to deliver efficiency and reliability in every shipment" 
+                >
+                    Somos uma empresa de logística comprometida em fornecer 
+                    serviços de alta qualidade. Como provedores de soluções 
+                    logísticas, nossa dedicação em atender às suas necessidades 
+                    é o que nos impulsiona. Com anos de experiência, nossa 
+                    equipe está pronta para oferecer eficiência e confiabilidade 
+                    em cada entrega.
+                </p>
+                <p>
+                    <strong
+                    class="translate"
+                    data-en="Choose Dynamic Port Lda for a solid partnership in logistics" 
+                    >Escolha a Dynamic Port Lda para uma parceria sólida em logística</strong>
+                </p>
+            </div>
+            <div class="first-section-last-div">
+                <img src="./public/images/harbour.webp" class="dummy-img-1"/>
             </div>
         </section>
 
         <!-- Second Section -->
         <section id="second-section">
-            <!-- <div class="row"> -->
-            <div class="second-section-first-div col-lg-6 col-sm-6">
+            <span class="red-background"></span>
+            <div class="second-section-first-div">
                 <div class="centralize">
                     <div class="stat-box">
                         <span class="stat-box stat-title">238</span>
-                        <span class="stat-box stat-description translate"
-                        data-en="Forn">Pacotes entregues</span>
+                        <span class="stat-box stat-description translate" data-en="Delivered packs">Pacotes entregues</span>
                     </div>
                     <div class="stat-box">
                         <span class="stat-box stat-title">224</span>
-                        <span class="stat-box stat-description">Clientes Satisfeitos</span>
+                        <span class="stat-box stat-description translate" data-en="Satisfied clients">Clientes Satisfeitos</span>
                     </div>
                 </div>
                 
                 <div class="centralize">
                     <div class="stat-box">
                         <span class="stat-box stat-title">1458</span>
-                        <span class="stat-box stat-description">Toneladas de mercadorias</span>
+                        <span class="stat-box stat-description translate" data-en="Tons of merchendise">Toneladas de mercadorias</span>
                     </div>
                     <div class="stat-box">
                         <span class="stat-box stat-title">79</span>
-                        <span class="stat-box stat-description">Pacotes entregues</span>
+                        <span class="stat-box stat-description translate" data-en="Delivered packs">Pacotes entregues</span>
                     </div>
                 </div>
                 
             </div>
-            <div class="second-section-second-div col-lg-6 col-sm-6">
-                <h2>Profissionais em transportes.</h2>
+            <div class="second-section-second-div">
+                <h2 class="translate" data-en="Transportation professionals">Profissionais em transportes.</h2>
 
-                <p>Disponibilizamos soluções abrangentes de transporte para nossos 
+                <p
+                class="translate"
+                data-en="We provide comprehensive transport solutions for our partners worldwide, consistently introducing innovative approaches to tackle the complex challenges of logistics."
+                >Disponibilizamos soluções abrangentes de transporte para nossos 
                     parceiros em todo o mundo, apresentando constantemente 
                     abordagens inovadoras para enfrentar os desafios complexos da 
                     logística
                 </p>
             </div>
-            </div>
         </section>
 
         <!-- Third Section -->
         <section id='third-section'>
-            <div class="row">
-            <h2 class="section-heading-red">Nossos serviços:</h2>
+            <h2 class="section-heading-red translate" data-en="Our services:">Nossos serviços:</h2>
 
             <div class="description-box-holder">
-                <div class="description-box ">
+                <div class="description-box">
 
                     <div>
-                        <img src="./public/images/dummy-image600x450.jpg" class="description-box-icon" />
-                        <h4>Transporte Terrestre</h4>
+                        <img src="./public/images/truck-speed-svgrepo-com.svg" class="description-box-icon" />
+                        <h4 class="translate" data-en="Land Transport">Transporte Terrestre</h4>
                     </div>
-                    <p>
+                    <p class="translate" 
+                    data-en="Our modern fleet and experienced team ensure that your goods reach their destination safely and efficiently. We monitor every stage of the journey.">
                         Nossa frota moderna e equipe experiente 
                         garantem que suas mercadorias cheguem 
                         ao destino com segurança e eficiência. 
@@ -133,12 +145,12 @@
                     </p>
                 </div>
 
-                <div class="description-box ">
+                <div class="description-box">
                     <div>
-                        <img src="./public/images/dummy-image600x450.jpg" class="description-box-icon" />
-                        <h4>Transporte Terrestre</h4>
+                        <img src="./public/images/train-svgrepo-com.svg" class="description-box-icon" />
+                        <h4 class="translate" data-en="Land Transport">Transporte Terrestre</h4>
                     </div>
-                    <p>
+                    <p class="translate" data-en="We guarantee safety and efficiency in the movement of goods by rail. Our experienced team monitors each stage, ensuring timely deliveries and contributing to sustainable logistics.">
                         Garantimos segurança e eficiência na 
                         movimentação de mercadorias por trilhos. 
                         Nossa equipe experiente monitora cada 
@@ -147,12 +159,12 @@
                     </p>
                 </div>
 
-                <div class="description-box ">
+                <div class="description-box">
                     <div>
-                        <img src="./public/images/dummy-image600x450.jpg" class="description-box-icon" />
-                        <h4>Transporte Marítmo</h4>
+                        <img src="./public/images/ship-2-svgrepo-com.svg" class="description-box-icon" />
+                        <h4 class="translate" data-en="Maritime Transport">Transporte Marítmo</h4>
                     </div>
-                    <p>
+                    <p class="translate" data-en="We facilitate maritime cargo transport, managing all the details for you. From containers to bulk cargo, we offer tailor-made solutions.">
                         Facilitamos o transporte marítimo de carga, 
                         gerenciando todos os detalhes para você. 
                         De contêineres a cargas a granel, 
@@ -160,12 +172,12 @@
                     </p>
                 </div>
 
-                <div class="description-box ">
+                <div class="description-box">
                     <div>
-                        <img src="./public/images/dummy-image600x450.jpg" class="description-box-icon" />
-                        <h4>Transporte Aéreo</h4>
+                        <img src="./public/images/airplane-plane-svgrepo-com.svg" class="description-box-icon" />
+                        <h4 class="translate" data-en="Air Transport">Transporte Aéreo</h4>
                     </div>
-                    <p>
+                    <p class="translate" data-en="When speed is essential, trust in our global air transport network. Your goods will be delivered quickly and accurately.">
                         Quando a velocidade é essencial, confie em 
                         nossa rede global de transporte aéreo. 
                         Suas mercadorias serão entregues 
@@ -173,7 +185,6 @@
                     </p>
                 </div>
             </div>
-        </div>
         </section>
 
         <!-- Forth Section -->
@@ -181,12 +192,12 @@
             <h2 class="section-heading-red">Business</h2>
             <div>
                 <div class="content-box">
-                    <img src="./public/images/dummy-image600x450.jpg" alt="" class="business-icon">
+                    <img src="./public/images/truck fleet.jpeg" alt="">
                     <div>
-                        <h4>Dynamic Port Lda Expande a sua frota de Veículos</h5>
-                        <time>15 de Outubro de 2023</time>    
+                        <h4 class="translate" data-en="Dynamic Port Lda expands its vehicle fleet">Dynamic Port Lda Expande a sua frota de Veículos</h5>
+                        <time class="translate" data-en="15th October 2023">15 de Outubro de 2023</time>    
                     </div>
-                    <p>A Dynamic Port Lda está orgulhosa de anunciar sua mais 
+                    <p class="translate" data-en="Dynamic Port Lda is proud to announce its latest expansion, with the addition of a new fleet of state-of-the-art vehicles. This initiative aims to increase our efficiency and capacity to meet the growing demands of transportation, while we continue to provide high-quality services to our customers.Dynamic Port Lda is proud to announce its latest expansion, with the addition of a new fleet of state-of-the-art vehicles. This initiative aims to increase our efficiency and capacity to meet the growing demands of transportation, while we continue to provide high-quality services to our customers.">A Dynamic Port Lda está orgulhosa de anunciar sua mais 
                         recente expansão, com a adição de uma nova frota de 
                         veículos de última geração. Essa iniciativa visa aumentar 
                         nossa eficiência e capacidade de atender às demandas 
@@ -195,12 +206,12 @@
                     </p>
                 </div>
                 <div class="content-box">
-                    <img src="./public/images/dummy-image600x450.jpg" alt="" class="business-icon">
+                    <img src="./public/images/business agreement.jpg" alt="">
                     <div>
-                        <h4>Parceria Estratégica com a Empresa TechLogiX</h5 >
-                        <time>20 de Outubro de 2023</time>    
+                        <h4 class="translate" data-en="Strategic Partnership with TechLogiX Company">Parceria Estratégica com a Empresa TechLogiX</h5>
+                        <time class="translate" data-en="20th October 2023">20 de Outubro de 2023</time>    
                     </div>
-                    <p>A Dynamic Port Lda está entusiasmada em anunciar uma 
+                    <p class="translate" data-en="Dynamic Port Lda is thrilled to announce a new strategic partnership with the renowned company TechLogiX. This collaboration will enable the integration of cutting-edge technology into our logistics processes, making our services even more efficient and providing our customers with a world-class transportation experience.">A Dynamic Port Lda está entusiasmada em anunciar uma 
                         nova parceria estratégica com a renomada empresa 
                         TechLogiX. 
                         Essa colaboração permitirá a integração de tecnologia de 
@@ -215,41 +226,41 @@
         <section id="fifth-section">
             <div>
                 <div class="">
-                    <h2 class="section-heading-red">Fale connosco</h2>
-                    <p>Entre em contato diretamente conosco, ligue ou 
+                    <h2 class="section-heading-red translate" data-en="Talk to us">Fale connosco</h2>
+                    <p class="translate" data-en="Contact us directly, call, or fill out the form to get a free consultation from our dedicated team">Entre em contato diretamente conosco, ligue ou 
                         preencha o formulário para obter uma consulta 
                         gratuita de nossa equipe dedicada.
                     </p>
                 </div>
                 <div class="contact-box-container">
                     <div class="contact-box">
-                        <img src="./public/images/dummy-image600x450.jpg" alt="">
+                        <img src="./public/images/phone icon.svg" alt="">
                         <span>+258 <strong>84 666 4188</strong></span>
                     </div>
                     <div class="contact-box">
-                        <img src="./public/images/dummy-image600x450.jpg" alt="">
+                        <img src="./public/images/envelope.svg" alt="">
                         <span>customersevices@dpslda.co.mz</span>
                     </div>
                     <div class="contact-box">
-                        <img src="./public/images/dummy-image600x450.jpg" alt="">
+                        <img src="./public/images/location.svg" alt="">
                         <span>Mozambique, Maputo - 147 22</span>
                     </div>
                 </div>
             </div>
             <div class="login-form-container">
                 <form class="login-form">
-                    <input type="text" value="Nome Completo" placeholder="Nome Completo">
-                    <input type="text" value="Número de Telefone" placeholder="Número de Telefone">
-                    <textarea name="" id="" cols="30" rows="10">Enviar Mensagem</textarea>
+                    <input type="text" value="" placeholder="Nome Completo">
+                    <input type="text" value="" placeholder="Número de Telefone">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enviar Mensagem"></textarea>
                 </form>
             </div>
         </section>
 
         <!-- Sixth Section -->
         <section id="sixth-section">
-            <h2 class="section-heading-red">Onde estamos</h2>
+            <h2 class="section-heading-red translate" data-en="">Onde estamos</h2>
             <!-- Replace with an actual map./public/images/dummy-image600x450.jpg -->
-            <img src="./public/images/map-location.png" alt="" id="map" class="img-fluid"> 
+            <img src="./public/images/map-location.png" alt="" id="map"> 
         </section>
     </main>
 
@@ -258,45 +269,46 @@
             <div>
                 <img class="logo" src="./public/images/logo.png"/>
             </div>
-            <p>Uma das principais empresas de transporte e logística em escala global</p>
+            <p class="translate" data-en="">Uma das principais empresas de transporte e logística em escala global</p>
             <div class="social-links">
-                <img src="./public/images/dummy-image600x450.jpg" alt="" class="social-icon">
-                <img src="./public/images/dummy-image600x450.jpg" alt="" class="social-icon">
-                <img src="./public/images/dummy-image600x450.jpg" alt="" class="social-icon">
-                <img src="./public/images/dummy-image600x450.jpg" alt="" class="social-icon">
+                <img src="./public/images/facebook-svgrepo-com.svg" alt="" class="social-icon">
+                <img src="./public/images/instagram-167-svgrepo-com.svg" alt="" class="social-icon">
+                <img src="./public/images/twitter.svg" alt="" class="social-icon">
+                <img src="./public/images/linkedin-svgrepo-com.svg" alt="" class="social-icon">
             </div>
         </div>
 
         <div>
-            <h5>Links úteis</h5>
+            <h5 class="translate" data-en="Useful links">Links úteis</h5>
             <ul>
                 <li>HOME</li>
                 <li>SOBRE</li>
                 <li>SERVIÇOS</li>
-                <li>NOTÍCIAS</li>
+                <li class="translate" data-en="News">NOTÍCIAS</li>
                 <li>CONTACT</li>
             </ul>
         </div>
         <div class="recent-posts">
-            <h5>Postagens Recentes</h5>
+            <h5 class="translate" data-en="Recent Posts">Postagens Recentes</h5>
             <div class="footer-news">
-                <div>Dynamic Port expande a sua frota de veículos</div>
-                <time>15 de Outubro de 2023</time>
+                <div class="translate" data-en="Dynamic Port Lda expands its vehicle fleet">Dynamic Port expande a sua frota de veículos</div>
+                <time class="translate" data-en="15th October 2023">15 de Outubro de 2023</time>
             </div>
             <div class="footer-news">
-                <div>Parceria Estratégica com a Empresa TechLogiX</div>
-                <time>20 de Outubro de 2023</time>
+                <div class="translate" data-en="Strategic Partnership with TechLogiX Company">Parceria Estratégica com a Empresa TechLogiX</div>
+                <time class="translate" data-en="20th October 2023">20 de Outubro de 2023</time>
             </div>
         </div>
         <div>
             <h5>Newsletter</h5>
             <form id="send-mail">
                 <input type="email" placeholder="Endereço de E-mail">
-                <input type="image" src="./public/images/dummy-image600x450.jpg" value="">
+                <input type="image" src="./public/images/envelope.svg" value="">
             </form>
-            <p>Inscreva-se para receber nossas últimas ofertas e novidades através do e-mail</p>
+            <p class="translate" data-en="Subscribe to receive our latest offers and updates via email">Inscreva-se para receber nossas últimas ofertas e novidades através do e-mail</p>
         </div>
     </footer>
-</div
+
+    <script src="./translate.js"></script>
 </body>
 </html>

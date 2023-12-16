@@ -1,5 +1,5 @@
-
-
+@media screen and (min-width: 320px) {
+    
 header{
     height: 100svh;
     width: 100%;
@@ -15,8 +15,6 @@ header> nav{
     position: sticky;
     top: 0px;
     left: 0px;
-    background-color: white;
-
 }
 
 header .logo-container{
@@ -37,38 +35,33 @@ header .logo-container{
 .navigation ul{
     display: flex;
     justify-content: space-evenly;
-    list-style: none;
-    font-weight: bolder;
+}
+
+#menu-toggler, #menu, .menu-toggler-label{
+    display: none;
 }
 
 #hero{
     height: calc(100svh - 8rem);
     width: 100%;
-    background-color: rgba(85, 83, 83, 0.729);
     padding-left: 5em;
     display: flex;
     align-items: center;
 }
 
 #hero h1{
-    font-family: "bold poppins";
-    color: white;
     font-size: 3em;
     margin-bottom: 2rem;
 }
 
 #hero button{
     border-radius: .75rem;
-    background-color: rgb(183, 0, 0);
-    box-shadow: 1px 1px 6px black;
-    color: white;
     width: 15rem;
     font-size: 1.35em;
     padding: .8rem;
     padding-left: 1rem;
     padding-right: 1rem;
     font-weight: 700;
-    border: none;
 }
 
 section{
@@ -76,58 +69,36 @@ section{
     padding-right: 10rem;
     height: 80svh;
 }
-@media screen and (max-width: 768px) {
-    section {
-        padding-left: 2rem;
-        padding-right: 2rem; 
-        width: 100%;
-    }
-}
+
 .section-heading-red{
-    color: rgb(183, 0, 0);
     font-size: 2.6em;
-    font-family: 'bold poppins';
 }
 
- /* #first-section{
+#first-section{
     display: flex;
     align-items: center;
     width: 100%;
-    
-} */
-
-.row{
-    height: 100%;
 }
 
-/*
 #first-section div{
     width: 50%;
-}*/
+}
 
-#first-section-first-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} 
-#first-section-div{
-    /* width: 50%;
-    height: 100%; */
+.first-section-last-div{
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-} 
+}
 .dummy-img-1{
     width: 80%;
     border-radius: 1.75rem;
     height: 60%;
-    background-color: black;
 }
 
 #second-section{
     padding: 0px;
-    background-color: rgb(125, 2, 2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,8 +118,6 @@ section{
     gap:2rem
 } 
 #second-section > div > div div{
-    background-color: white;
-    color: rgb(183, 0, 0);
     border-radius: 1.4em;
     height: 7rem;
     width: 35%;
@@ -175,13 +144,8 @@ section{
 .stat-box{
     text-align: center;
 }
-.stat-title{
-    font-weight: 900;
-    font-size: 1.75em;
-}
 
 .second-section-second-div{
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,42 +155,6 @@ section{
     padding-right: 4em;
     text-align: right;
     font-weight: 300;
-}
-.second-section-second-div h2{
-    font-family: 'bold poppins';
-    letter-spacing: 1.5px;
-    font-size: 1.9rem;
-    text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-    #second-section {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-    #second-section > div {
-        width: 100%;
-    }
-
-    .centralize {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    #second-section > div > div div {
-        width: 100%;
-        /* margin-bottom: 5px; */
-    }
-    .second-section-first-div{
-        gap: 1em;
-    }
-
-    .second-section-second-div {
-        padding-left: 2em;
-        padding-right: 2em;
-        text-align: center;
-    }
 }
 
 #third-section{
@@ -238,12 +166,11 @@ section{
 }
 
 .description-box{
-    border: 1px solid red;
     border-radius: 2em;
     display: flex;
     flex-direction: column;
-    height: 20rem;
-    width: 48%;
+    height: 25rem;
+    width: 25%;
     font-size: x-small;
     padding-left: .5rem;
     padding-right: .5rem;
@@ -261,14 +188,11 @@ section{
 
 .description-box h4{
     font-size: 12pt;
-    color: rgb(183, 0, 0);
-    text-align: center;
+
 }
 .description-box-icon{
     height: 6rem;
     width: 6rem;
-    background-color: rgb(183, 0, 0);
-    align-self: center;
 }
 .description-box-holder{
     display: flex;
@@ -277,36 +201,6 @@ section{
     align-items: center;
     margin-top: 4rem;
 }
-
-@media screen and (max-width: 768px) {
-    .description-box {
-        width: 90%;
-        margin-bottom: 1rem;
-        height: auto;
-    }
-    
-    .description-box-holder {
-        flex-wrap: wrap;
-        gap: 1rem;
-        /* justify-content: center; */
-    } 
-    .description-box-icon{
-        display: none;
-    }
-}
-
-/* @media screen and (max-width: 470px) {
-    .description-box {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    
-    .description-box-holder {
-        flex-wrap: wrap;
-        gap: 1rem;
-        /* justify-content: center; */
-   /* } 
-} */
 
 #forth-section{
     height: fit-content;
@@ -343,67 +237,16 @@ section{
     font-size: small;
 }
 
-@media screen and (max-width: 768px) {
-    #forth-section{
-        margin-top: 200px;
-        margin-bottom: 200px;
-    }
-    #forth-section > div {
-        flex-direction: row; /* Display items side by side on larger screens */
-    }
-
-    #forth-section > div > div {
-        width: 48%; /* Adjust the width as needed */
-    }
-
-    #forth-section img{
-        height: 50px;
-    }
-}
-
 #fifth-section {
     display: flex;
     align-items: start;
     justify-content: center;
     gap: 10rem;
+    min-height: 65svh;
 }
 
 #fifth-section > div{
     width: calc(50% - 2rem);
-}
-
-
-.login-form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(172, 4, 4);
-    gap: 3rem;
-    border-radius: 1.5rem;
-    flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-
-}
-
-.login-form input, .login-form textarea{
-    border-radius: 1rem;
-    height: 2.75rem;
-    width: 80%;
-    background-color: #ef889ea2;
-    border: none;
-    padding-left: 10px;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-    outline: none;
-}
-
-.login-form textarea{
-    height: 7rem;
-    padding-top: 15px;
-    padding-left: 15px;
-    resize: none;
 }
 
 .contact-box{
@@ -412,41 +255,10 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-.contact-box span{
-    width: 70%;
-}
-.contact-box > img{
-    height: 4rem;
-    width: 4rem;
-    background-color: rgb(172, 4, 4);
-}
+
 .contact-box-container{
-    margin-top: 2rem;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
 }
-
-@media screen and (max-width: 768px) {
-    #fifth-section {
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
-        margin-bottom: 200px;
-    }
-
-    #fifth-section > div {
-        width: 100%;
-    }
-
-    .login-form,
-    .contact-box-container {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
 
 #map{
     height: 50svh;
@@ -465,12 +277,10 @@ section{
 footer{
     height: 55svh;
     width: 100%;
-    background-color: rgb(197, 11, 48);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    color: white;
 }
 
 footer > div{
@@ -493,13 +303,12 @@ footer > div h5{
     margin-top: 2.5rem;
 }
 .social-icon{
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 footer > div ul{
     margin-top: 1rem;
-    list-style: inside url(./public/images/arrow-foward.svg);
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -519,9 +328,6 @@ footer > div ul{
     font-size: 8pt;
 }
 
-.footer-news time{
-    color: #ffffff9f;
-}
 
 #send-mail{
     display: flex;
@@ -534,24 +340,14 @@ footer > div ul{
     margin-bottom: 2rem;
 }
 #send-mail input[type="email"]{
-    background-color: gray;
-    color: white;
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
-    border: none;
     width: 80%;
-    outline: none;
 }
 #send-mail input[type="image"]{
-    background-color: white;
     width: 3.5rem;
-    border-radius: 1.5rem;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
 }
 
 #send-mail ~ p{
     font-size: 9pt;
+}
+
 }
