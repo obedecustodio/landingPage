@@ -11,6 +11,23 @@
 </head>
 <body>
     <header>
+        <div id="navbar">
+            <!-- Language switch buttons with flags -->
+            <div id="languageContainer">
+                <button class="flag" onclick="switchLanguage('en')" id="btnEn">🇺🇸</button>
+                <button class="flag d-none" onclick="switchLanguage('pt')" id="btnPt">🇵🇹</button>
+            </div>
+        
+            <!-- Currency containers -->
+            <div id="currencyContainers">
+                <div class="container" id="dollarContainer"> $ 1.00</div>
+                <div class="container" id="meticalContainer">MZN 64.00</div>
+                <div class="container" id="meticalContainer">ZAR 3,87.00</div>
+            </div>
+        
+            <!-- Location of the company -->
+            <div class="container" id="locationContainer">Company Location</div>
+        </div>
         <nav>
             <!-- LOGO -->
             <div class="logo-container">
@@ -30,7 +47,7 @@
                         <li>SERVICOS</li>
                         <li class="translate" data-en="NEWS">NOTICIAS</li>
                         <li>CONTACT</li>
-                        <li class="translate" onclick="switchLanguage()" class="switchLang" data-en="PT">EN</li>
+                        <!-- <li class="translate" onclick="switchLanguage()" class="switchLang" data-en="PT">EN</li> -->
                     </ul>
                 </div>
 
@@ -40,7 +57,7 @@
                     <li>SERVICOS</li>
                     <li class="translate" data-en="NEWS">NOTICIAS</li>
                     <li>CONTACT</li>
-                    <li class="translate" onclick="switchLanguage()" class="switchLang" data-en="PT">EN</li>
+                    <!-- <li class="translate" onclick="switchLanguage()" class="switchLang" data-en="PT">EN</li> -->
                 </ul>
             </div>
         </nav>

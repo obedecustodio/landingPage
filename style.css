@@ -24,6 +24,35 @@ header .logo-container{
     align-items: center;
     justify-content: center;
 }
+
+#navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flag {
+    margin-right: 10px;
+    /* Add more styling for flags if needed */
+}
+
+.container {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+#locationContainer {
+    order: 2; /* Change the order to move it to the right */
+}
+
+#currencyContainers{
+    display: flex;
+}
 .logo{
     height: 100%;
     width: 100%;
@@ -350,4 +379,8 @@ footer > div ul{
     font-size: 9pt;
 }
 
+}
+
+.d-none{
+    display: none;
 }
