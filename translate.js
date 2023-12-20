@@ -36,14 +36,11 @@ async function fetchExchangeRates() {
         const response = await fetch(url);
         const data = await response.json();
         console.log(data)
-        // Update the displayed exchange rates
-        // document.getElementById('dollarContainer').innerText = `Dollar: ${data.rates.USD}`;
-        // document.getElementById('meticalContainer').innerText = `Metical: ${data.rates.MZN}`;
     } catch (error) {
         console.error('Error fetching exchange rates:', error);
     }
 }
 
 
-fetchExchangeRates();
+// fetchExchangeRates();
 setDataPortuguese()
